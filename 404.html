@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>0xterm</title>
+    <meta name="robots" content="noindex" />
+    <script>
+      (function () {
+        var path = location.pathname || "/";
+        if (/^\/app(\/|$)/.test(path)) {
+          var rest = path.replace(/^\/app\/?/, "/") || "/";
+          if (rest.charAt(0) !== "/") rest = "/" + rest;
+          location.replace(
+            "https://app.0xterm.xyz" + rest + location.search + location.hash
+          );
+          return;
+        }
+        // Unknown path on apex → home (marketing site has no deep routes).
+        location.replace("/" + (location.search || "") + (location.hash || ""));
+      })();
+    </script>
+  </head>
+  <body></body>
+</html>

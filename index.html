@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>0xterm</title>
+    <meta
+      name="description"
+      content="Matrix-style Web3 Terminal Interface"
+    />
+    <link rel="icon" href="/logo.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="page" style="--phosphor: #00ff66">
+      <div class="phosphor-grid" aria-hidden="true"></div>
+      <div class="crt-scanlines" aria-hidden="true"></div>
+      <div class="fade-bottom" aria-hidden="true"></div>
+
+      <div class="content">
+        <header class="nav wrap">
+          <div class="brand">
+            <img src="/logo.svg" alt="0xTERM" width="24" height="24" draggable="false" />
+            <span class="brand-name">0XTERM</span>
+          </div>
+          <a class="btn-outline" href="https://app.0xterm.xyz/">Launch Terminal</a>
+        </header>
+
+        <section class="hero wrap">
+          <p class="eyebrow">WEB3 TERMINAL INTERFACE</p>
+          <h1>
+            <span class="scramble" data-scramble data-text="YOUR PORTFOLIO,">YOUR PORTFOLIO,</span>
+            <br />
+            <span class="scramble" data-scramble data-text="FROM THE COMMAND LINE.">FROM THE COMMAND LINE.</span>
+          </h1>
+          <p class="lede">
+            0xterm is a Matrix-style Web3 terminal. Connect a wallet, then type
+            your way across chains — portfolio, balances, swaps, and contract
+            probes, all in a keyboard-first interface.
+          </p>
+          <div class="cta-row">
+            <a class="btn-solid" href="https://app.0xterm.xyz/">[ Launch Terminal ]</a>
+            <a class="btn-ghost" href="#commands">Commands</a>
+          </div>
+          <p class="tip">
+            Terminal lives at app.0xterm.xyz
+            <span class="sep">·</span>
+            Prefs are host-scoped — Export / Import in Settings after you move.
+          </p>
+        </section>
+
+        <section class="section wrap">
+          <h2 class="section-label">FEATURES</h2>
+          <div class="features">
+            <div class="feature">
+              <h3>Wallet-native terminal</h3>
+              <p>
+                Portfolio, balances, and P/L from a command line. No dashboard —
+                just queries.
+              </p>
+            </div>
+            <div class="feature">
+              <h3>On-chain tokens</h3>
+              <p>
+                Register, probe, and track any ERC-20 across supported chains.
+              </p>
+            </div>
+            <div class="feature">
+              <h3>Swap &amp; deploy</h3>
+              <p>
+                Execute swaps and deploy contracts without leaving the terminal.
+              </p>
+            </div>
+            <div class="feature">
+              <h3>Portfolio snapshots</h3>
+              <p>Snapshot your holdings and compare P/L over time.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section wrap">
+          <h2 class="section-label tight">CHAINS</h2>
+          <div class="chains">
+            <span class="chip">Ethereum</span>
+            <span class="chip">Base</span>
+            <span class="chip">Arbitrum</span>
+            <span class="chip">Optimism</span>
+            <span class="chip">Polygon</span>
+            <span class="chip">+ Sepolia testnets</span>
+          </div>
+        </section>
+
+        <section class="section wrap" id="commands">
+          <h2 class="section-label">TRY IT</h2>
+          <div class="cmd-panel">
+            <div class="cmd-bar">
+              <span class="cmd-dot" aria-hidden="true"></span>
+              <span>0xterm — type a command</span>
+            </div>
+            <div class="cmd-list">
+              <div class="cmd-row">
+                <span class="cmd-name">portfolio</span>
+                <span class="cmd-desc">list holdings across all chains</span>
+              </div>
+              <div class="cmd-row">
+                <span class="cmd-name">balance eth</span>
+                <span class="cmd-desc">read an on-chain balance</span>
+              </div>
+              <div class="cmd-row">
+                <span class="cmd-name">snapshot</span>
+                <span class="cmd-desc">save a P/L baseline</span>
+              </div>
+              <div class="cmd-row">
+                <span class="cmd-name">pnl</span>
+                <span class="cmd-desc">compare against a snapshot</span>
+              </div>
+              <div class="cmd-row">
+                <span class="cmd-name">is erc20 &lt;addr&gt;</span>
+                <span class="cmd-desc">probe ERC-20 / ERC-721</span>
+              </div>
+              <div class="cmd-row">
+                <span class="cmd-name">swap</span>
+                <span class="cmd-desc">swap tokens on-chain</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <footer class="footer wrap">
+          <span>© 2026 0XTERM</span>
+          <a href="https://app.0xterm.xyz/">Launch the terminal</a>
+        </footer>
+      </div>
+    </div>
+    <script src="/landing.js" defer></script>
+  </body>
+</html>
